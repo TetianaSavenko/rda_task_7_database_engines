@@ -25,11 +25,11 @@ CREATE TABLE ProductDescription (
     PRIMARY KEY (ID)
 ) ENGINE=InnoDB;
 
--- Create a table for storing logs (Columns: ID, Time, LogRecord)
+-- Create a table for storing logs (Columns: ID, Timestamp, Message)
 CREATE TABLE Logs (
     ID INT,
-    Time DATETIME,
-    LogRecord TEXT,
+    Timestamp DATETIME,
+    Message TEXT,
     PRIMARY KEY (ID)
 ) ENGINE=BLACKHOLE;
 
