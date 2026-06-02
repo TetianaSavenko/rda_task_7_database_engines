@@ -22,8 +22,8 @@ CREATE TABLE GeoIPCache (
 CREATE TABLE ProductDescription (
     ID INT,
     Description TEXT,
-    CountryID INT,
     ProductID INT,
+    CountryID INT,
     PRIMARY KEY (ID)
 ) ENGINE=InnoDB;
 
@@ -31,8 +31,8 @@ CREATE TABLE ProductDescription (
 
 CREATE TABLE logs (
     ID INT,
-    Timestamp DATETIME,
-    Message TEXT,
+    Time DATETIME,
+    LogRecord TEXT,
     PRIMARY KEY (ID)
 ) ENGINE=BLACKHOLE;
 
